@@ -12,6 +12,7 @@
         "stdlib.h": "c",
         "sll.h": "c",
         "compare": "c",
-        "c_sll.h": "c"
+        "c_sll.h": "c",
+        "string.h": "c"
     }
 }
