@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "stdint.h": "c",
+        "stdint-gcc.h": "c",
+        "stdio.h": "c",
+        "c_list.h": "c",
+        "type_traits": "c",
+        "typeinfo": "c",
+        "base_link.h": "c",
+        "assert.h": "c",
+        "stdbool.h": "c",
+        "stdlib.h": "c",
+        "sll.h": "c",
+        "compare": "c",
+        "c_sll.h": "c"
+    }
+}
