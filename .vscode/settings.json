@@ -13,6 +13,9 @@
         "sll.h": "c",
         "compare": "c",
         "c_sll.h": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "c_stack.h": "c",
+        "sll_queue.h": "c",
+        "sll_stack.h": "c"
     }
 }

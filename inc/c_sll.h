@@ -5,7 +5,7 @@
 extern "C" {
 #endif
 
-
+    #include "stdbool.h"
     #include "stdio.h"
     #include "stdlib.h"
     #include "stdint.h"
@@ -32,17 +32,28 @@ extern "C" {
 
 
 
+
 //单链表结点
 #define new_sll_node (sll_node_t *) malloc(sizeof(sll_node_t))
 #define new_sll (sll_t *) malloc(sizeof(sll_t))
 #define is_sll_empty(sll) (sll)->len==0
+#define del_sll_node(sll_node) free(sll_node);
 
 sll_t *sll_create(void *msg);
+
 sll_node_t *sll_new_node(void *data, uint32_t data_size);
 sll_node_t *sll_get_node_by_pos(sll_t *sll, uint32_t pos);
 sll_node_t *sll_insert_by_pos(sll_t *sll, sll_node_t *node_insert, uint32_t pos);
 
+void sll_erase_by_pos(sll_t *sll, uint32_t pos);
+void sll_erase_by_range(sll_t *sll, uint32_t sta,uint32_t end);
+void sll_clear(sll_t *sll);
 
+void sll_pop_front(sll_t *sll);
+void sll_pop_back(sll_t *sll);
+
+sll_node_t * sll_push_front(sll_t *sll, sll_node_t *node_insert);
+sll_node_t * sll_push_back(sll_t *sll, sll_node_t *node_insert);
 
 #define sll_forech(sll,sll_node) for(sll_node=sll->head;sll_node!=NULL;sll_node=sll_node->next) 
 

@@ -5,8 +5,8 @@
 extern "C" {
 #endif
 
-#include "assert.h"//调试断言assert()
-#define NDEBUG //取消所有断言
+    // #define NDEBUG //取消所有断言
+    #include "assert.h"//调试断言assert()
 
 
 
@@ -14,18 +14,13 @@ extern "C" {
 
 
 
-#include "c_sll.h"
+
+    #include "c_sll.h"
+    #include "sll_stack.h"
+    #include "sll_queue.h"
 
 
 
-
-#define C_new(type) =(type*) malloc (sizeof(type))
-#define C_news(type,len) =(type*) malloc (sizeof(type*len))
-
-#define is_empty(val) val==NULL
-
-
-#define C_del(val) free(val)
 
 
 
